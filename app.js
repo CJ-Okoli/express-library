@@ -16,7 +16,7 @@ var app = express();
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var dev_db_url = 'mongodb+srv://clone:VnyhxlydYduUUS6X@cluster0.ktupicp.mongodb.net/?retryWrites=true&w=majority';
+var dev_db_url = 'mongodb+srv://clone:VnyhxlydYduUUS6X@cluster0.ktupicp.mongodb.net/local_library_clone?retryWrites=true&w=majority';
 // var dev_db_url = 'mongodb+srv://tutorial:tutorial@cluster0.kvnt1no.mongodb.net/local_library1?retryWrites=true&w=majority';
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
